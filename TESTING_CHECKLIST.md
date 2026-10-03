@@ -1,0 +1,29 @@
+# Testing Checklist
+
+- [ ] `data/raw/yield_df.csv` loads without error (`pd.read_csv`)
+- [ ] Preprocessing runs: `Unnamed: 0` dropped, missing/duplicate counts logged in `reports/data_quality_report.json`
+- [ ] `python train_models.py` completes and trains all 3 models
+- [ ] `reports/metrics.json` is populated with real MAE/RMSE/R² (not placeholders)
+- [ ] `models/*_pipeline.joblib` files exist for all 3 models
+- [ ] `models/best_model.json` points to a valid, existing file
+- [ ] `uvicorn backend.main:app --reload` starts without error
+- [ ] `http://127.0.0.1:8000/docs` loads and lists all endpoints
+- [ ] `GET /api/summary` returns dynamic KPI values
+- [ ] `GET /api/crops`, `GET /api/areas` return non-empty lists
+- [ ] `GET /api/data` — filters (area/item/year/search) narrow results correctly
+- [ ] `GET /api/yield-trends`, `GET /api/crop-analysis` return chart-ready data
+- [ ] `GET /api/model-metrics` returns metrics for all 3 models + a best model
+- [ ] `GET /api/feature-importance` returns importances for tree-based models
+- [ ] `POST /api/predict` with valid input returns a numeric prediction
+- [ ] `POST /api/predict` with an unknown area/crop returns HTTP 400 (not a crash)
+- [ ] Frontend loads at `http://127.0.0.1:8080` and shows "API connected"
+- [ ] Overview charts render with real numbers (no static/fake data)
+- [ ] Data Explorer table + filters + pagination work
+- [ ] Yield Analysis filters actually change the charts
+- [ ] Prediction form returns a real prediction using the trained pipeline
+- [ ] Model Comparison table highlights the correct best model
+- [ ] Feature Importance charts render for Random Forest and XGBoost
+- [ ] Research Benchmark page loads and shows "Not directly comparable" where appropriate
+- [ ] Insights page text reflects actual computed correlations, not fixed text
+- [ ] Light/Dark theme toggle switches instantly and persists on reload
+- [ ] Stopping the backend shows a clear "API unreachable" state in the frontend, not a crash
