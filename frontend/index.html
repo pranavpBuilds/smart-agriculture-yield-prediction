@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Smart Agriculture Crop Yield Prediction</title>
+<link rel="stylesheet" href="style.css" />
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+</head>
+<body>
+<div class="app-shell">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-logo">🌾</div>
+      <div class="brand-text">
+        <div class="title">Smart Agriculture</div>
+        <div class="subtitle">Crop Yield Prediction</div>
+      </div>
+    </div>
+
+    <ul class="nav-list" id="navList">
+      <li class="nav-item" data-page="overview"><span class="nav-icon">📊</span> Overview</li>
+      <li class="nav-item" data-page="explorer"><span class="nav-icon">🔍</span> Data Explorer</li>
+      <li class="nav-item" data-page="analysis"><span class="nav-icon">📈</span> Yield Analysis</li>
+      <li class="nav-item" data-page="prediction"><span class="nav-icon">🌱</span> Prediction</li>
+      <li class="nav-item" data-page="comparison"><span class="nav-icon">⚖️</span> Model Comparison</li>
+      <li class="nav-item" data-page="importance"><span class="nav-icon">🧩</span> Feature Importance</li>
+      <li class="nav-item" data-page="benchmark"><span class="nav-icon">📚</span> Research Benchmark</li>
+      <li class="nav-item" data-page="insights"><span class="nav-icon">💡</span> Insights</li>
+    </ul>
+
+    <div class="sidebar-footer">
+      Final-year academic project<br/>
+      Backend: <span id="apiBaseLabel">http://127.0.0.1:8000</span>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <h1 class="page-title" id="pageTitle">Overview</h1>
+        <p class="page-desc" id="pageDesc">Key indicators from the crop yield dataset.</p>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span class="api-status" id="apiStatus">Checking API…</span>
+        <div class="theme-toggle">
+          <button id="lightBtn">☀️ Light</button>
+          <button id="darkBtn">🌙 Dark</button>
+        </div>
+      </div>
+    </div>
+
+    <section id="page-overview" class="page"></section>
+    <section id="page-explorer" class="page" style="display:none;"></section>
+    <section id="page-analysis" class="page" style="display:none;"></section>
+    <section id="page-prediction" class="page" style="display:none;"></section>
+    <section id="page-comparison" class="page" style="display:none;"></section>
+    <section id="page-importance" class="page" style="display:none;"></section>
+    <section id="page-benchmark" class="page" style="display:none;"></section>
+    <section id="page-insights" class="page" style="display:none;"></section>
+
+    <footer class="note">
+      Smart Agriculture Crop Yield Prediction System — project built on the
+      Crop Yield Prediction Dataset. Historical, aggregated data; 
+    </footer>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
