@@ -1,0 +1,4 @@
+{
+  "best_model_name": "XGBoost",
+  "file": "xgboost_pipeline.joblib"
+}
