@@ -1,0 +1,42 @@
+{
+  "metrics": {
+    "Linear Regression": {
+      "train": {
+        "MAE": 10050.1346,
+        "RMSE": 13742.9122,
+        "R2": 0.93599
+      },
+      "test": {
+        "MAE": 10078.6982,
+        "RMSE": 13982.5443,
+        "R2": 0.934305
+      }
+    },
+    "Random Forest": {
+      "train": {
+        "MAE": 5753.0188,
+        "RMSE": 8526.0973,
+        "R2": 0.975363
+      },
+      "test": {
+        "MAE": 8094.3751,
+        "RMSE": 11919.0081,
+        "R2": 0.952265
+      }
+    },
+    "XGBoost": {
+      "train": {
+        "MAE": 3660.9087,
+        "RMSE": 5279.6629,
+        "R2": 0.990553
+      },
+      "test": {
+        "MAE": 5766.0532,
+        "RMSE": 8440.1218,
+        "R2": 0.976064
+      }
+    }
+  },
+  "best_model": "XGBoost",
+  "selection_criterion": "Lowest RMSE on held-out test set (20% split, random_state=42)"
+}

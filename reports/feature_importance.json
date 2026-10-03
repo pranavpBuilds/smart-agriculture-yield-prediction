@@ -1,0 +1,166 @@
+{
+  "Random Forest": [
+    {
+      "feature": "Item_Potatoes",
+      "importance": 0.470246
+    },
+    {
+      "feature": "Item_Sweet potatoes",
+      "importance": 0.128749
+    },
+    {
+      "feature": "Item_Cassava",
+      "importance": 0.100131
+    },
+    {
+      "feature": "Item_Yams",
+      "importance": 0.091521
+    },
+    {
+      "feature": "Item_Plantains and others",
+      "importance": 0.041723
+    },
+    {
+      "feature": "average_rain_fall_mm_per_year",
+      "importance": 0.014321
+    },
+    {
+      "feature": "Item_Maize",
+      "importance": 0.011729
+    },
+    {
+      "feature": "pesticides_tonnes",
+      "importance": 0.009371
+    },
+    {
+      "feature": "Item_Rice, paddy",
+      "importance": 0.007726
+    },
+    {
+      "feature": "avg_temp",
+      "importance": 0.007225
+    },
+    {
+      "feature": "Area_Afghanistan",
+      "importance": 0.005188
+    },
+    {
+      "feature": "Area_Panama",
+      "importance": 0.00491
+    },
+    {
+      "feature": "Area_Nigeria",
+      "importance": 0.004366
+    },
+    {
+      "feature": "Area_Sudan",
+      "importance": 0.004219
+    },
+    {
+      "feature": "Item_Sorghum",
+      "importance": 0.004206
+    },
+    {
+      "feature": "Area_Ukraine",
+      "importance": 0.003823
+    },
+    {
+      "feature": "Area_South Africa",
+      "importance": 0.003738
+    },
+    {
+      "feature": "Area_Nepal",
+      "importance": 0.00365
+    },
+    {
+      "feature": "Area_Bolivia",
+      "importance": 0.003464
+    },
+    {
+      "feature": "Area_Iraq",
+      "importance": 0.003365
+    }
+  ],
+  "XGBoost": [
+    {
+      "feature": "Item_Potatoes",
+      "importance": 0.080468
+    },
+    {
+      "feature": "Item_Sweet potatoes",
+      "importance": 0.039958
+    },
+    {
+      "feature": "Item_Cassava",
+      "importance": 0.031201
+    },
+    {
+      "feature": "Item_Yams",
+      "importance": 0.030044
+    },
+    {
+      "feature": "Area_Nigeria",
+      "importance": 0.018622
+    },
+    {
+      "feature": "Area_Ukraine",
+      "importance": 0.018376
+    },
+    {
+      "feature": "Item_Plantains and others",
+      "importance": 0.018171
+    },
+    {
+      "feature": "Area_Mexico",
+      "importance": 0.016868
+    },
+    {
+      "feature": "Area_Afghanistan",
+      "importance": 0.016749
+    },
+    {
+      "feature": "Area_Tanzania",
+      "importance": 0.016741
+    },
+    {
+      "feature": "Area_Israel",
+      "importance": 0.016454
+    },
+    {
+      "feature": "Area_Nepal",
+      "importance": 0.016404
+    },
+    {
+      "feature": "Area_Japan",
+      "importance": 0.016297
+    },
+    {
+      "feature": "Area_South Korea",
+      "importance": 0.015938
+    },
+    {
+      "feature": "Area_Peru",
+      "importance": 0.015746
+    },
+    {
+      "feature": "Area_Costa Rica",
+      "importance": 0.015558
+    },
+    {
+      "feature": "Area_South Africa",
+      "importance": 0.015237
+    },
+    {
+      "feature": "Area_Cameroon",
+      "importance": 0.015207
+    },
+    {
+      "feature": "Area_Ghana",
+      "importance": 0.014929
+    },
+    {
+      "feature": "Area_Panama",
+      "importance": 0.014644
+    }
+  ]
+}

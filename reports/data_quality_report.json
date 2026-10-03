@@ -1,0 +1,6 @@
+{
+  "rows_loaded": 28242,
+  "missing_values_found": 0,
+  "duplicate_rows_found": 8590,
+  "action_taken": "rows with missing values dropped / duplicates removed"
+}

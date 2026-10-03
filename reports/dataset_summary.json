@@ -1,0 +1,9 @@
+{
+  "total_records": 19652,
+  "num_areas": 103,
+  "num_crops": 10,
+  "year_min": 1990,
+  "year_max": 2013,
+  "train_rows": 15721,
+  "test_rows": 3931
+}
